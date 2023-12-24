@@ -1,7 +1,7 @@
 
 import React, {useState} from 'react'
 import logo from "../assets/logo.png";
-import { closeNavbar, openNavbar } from "../helper/icons";
+import { closeNavbar, openNavbar, logoutIcon } from "../helper/icons";
 import {NavLink} from "react-router-dom"
 const navigation =[
   {
@@ -67,7 +67,7 @@ const Navbar = () => {
                 to="/"
                 className="flex items-center justify-center gap-x-1 py-2 px-4 font-medium text-gray-700 hover:bg-main hover:text-white active:bg-gray-900 rounded-full md:inline-flex"
               >
-                Logout
+                Logout{logoutIcon}
               </NavLink>
             </div>
           </div>
